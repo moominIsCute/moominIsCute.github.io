@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume | 윤석호</title>
+
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --text:#111827;
+      --muted:#6b7280;
+      --line:#e5e7eb;
+      --accent:#2563eb;
+      --chip:#eef2ff;
+      --chipBorder:#dbeafe;
+      --shadow:0 6px 18px rgba(17,24,39,.06);
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,Noto Sans KR,sans-serif;
+      line-height:1.65;
+      background:var(--bg);
+      color:var(--text);
+    }
+
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .wrap{max-width:1080px;margin:0 auto;padding:28px 18px}
+    .grid{display:grid;grid-template-columns:320px 1fr;gap:18px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:18px;
+      box-shadow:var(--shadow);
+    }
+
+    /* LEFT */
+    .sidebar{
+      display:flex;
+      flex-direction:column;
+      min-height:560px;
+    }
+    .sidebar-bottom{margin-top:auto}
+
+    .name{font-size:26px;margin:0}
+    .role{margin:6px 0 0;color:var(--muted)}
+    .small{color:var(--muted);font-size:14px;margin:10px 0}
+
+    .section-title{
+      font-size:13px;
+      letter-spacing:.08em;
+      color:var(--muted);
+      margin:0 0 10px;
+      text-transform:uppercase;
+    }
+
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{
+      font-size:13px;
+      padding:6px 10px;
+      border-radius:999px;
+      background:var(--chip);
+      border:1px solid var(--chipBorder);
+      color:#1e3a8a;
+      white-space:nowrap;
+    }
+
+    .divider{height:1px;background:var(--line);margin:14px 0}
+
+    .badge{
+      display:inline-block;
+      font-size:12px;
+      padding:3px 8px;
+      border-radius:8px;
+      background:#ecfeff;
+      border:1px solid #cffafe;
+      color:#155e75;
+      margin-left:6px;
+      vertical-align:middle;
+    }
+
+    /* RIGHT */
+    .lead{margin:0 0 10px}
+    .proj{padding:2px 0}
+    .proj h3{margin:0 0 6px;font-size:17px}
+    .proj .meta{margin:0 0 10px;color:var(--muted);font-size:13px}
+    ul{margin:8px 0 0;padding-left:18px}
+    li{margin:6px 0}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="grid">
+
+      <!-- LEFT -->
+      <aside class="card sidebar">
+        <h1 class="name">윤석호</h1>
+        <p class="role">
+          Backend Developer (Java/Spring)
+          <span class="badge">Real-time</span>
+          <span class="badge">RAG/LLM</span>
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="small"><strong>Email</strong><br/>
+          <a href="mailto:1happymoomin1@gmail.com">1happymoomin1@gmail.com</a>
+        </p>
+
+        <p class="small"><strong>GitHub</strong><br/>
+          <a href="https://github.com/moominIsCute" target="_blank" rel="noopener">github.com/moominIsCute</a>
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-title">Skills</p>
+
+        <p class="small"><strong>Backend</strong></p>
+        <div class="chips">
+          <span class="chip">Java 17</span>
+          <span class="chip">Spring Boot</span>
+          <span class="chip">Spring Security</span>
+          <span class="chip">Spring Data JPA</span>
+          <span class="chip">SSE</span>
+          <span class="chip">WebSocket</span>
+          <span class="chip">Redis Pub/Sub</span>
+          <span class="chip">Redisson</span>
+          <span class="chip">Gradle</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="small"><strong>AI / Chatbot</strong></p>
+        <div class="chips">
+          <span class="chip">LangChain4j 0.35.0</span>
+          <span class="chip">Gemini</span>
+          <span class="chip">Redis Vector Search</span>
+          <span class="chip">RAG</span>
+          <span class="chip">Tool Calling</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="small"><strong>Infra / DevOps</strong></p>
+        <div class="chips">
+          <span class="chip">AWS EC2</span>
+          <span class="chip">AWS ECR</span>
+          <span class="chip">Docker</span>
+          <span class="chip">GitHub Actions</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">Redis</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="sidebar-bottom">
+          <p class="section-title">Links</p>
+          <p class="small">
+            <a href="https://www.notion.so/e461890e91134810b7500bb9ddf2725c?pvs=21" target="_blank" rel="noopener">프로젝트(노션)</a><br/>
+            <a href="https://www.notion.so/b34dfc1d08674964bc1ab20bb9b7babf?pvs=21" target="_blank" rel="noopener">경력사항(노션)</a>
+          </p>
+        </div>
+      </aside>
+
+      <!-- RIGHT -->
+      <main class="card">
+        <p class="section-title">Introduction</p>
+        <p class="lead">
+          전사 1등을 달성한 끈기와 GolfRental, DentalLink 두 번의 프로젝트 팀장 경험을 통해 우리팀으로 성과를 내는 법을 체득했습니다.
+          MR로써 쌓은 유연한 소통 능력을 바탕으로 팀원 간의 이견을 원만히 조율하고, 프로젝트 일정을 주도적으로 관리했습니다.
+        </p>
+        <p class="lead">
+          기술적으로는 비즈니스 요구사항을 정확하고 안정적인 서비스 로직으로 구현하는 데 집중하며,
+          RAG 기반 챗봇과 실시간 통신 기능을 직접 설계·구현하며 백엔드 역량을 넓혀 가고 있습니다.
+          맡은 기능의 품질은 물론 팀 전체의 목표 달성까지 책임지는 신뢰할 수 있는 동료가 되겠습니다.
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="section-title">Projects</p>
+
+        <!-- GolfRental 먼저 -->
+        <div class="proj">
+          <h3>GolfRental — P2P 골프 장비 대여 플랫폼 (Team Lead)</h3>
+          <p class="meta">Java/Spring · Redis · SSE/WS · Redis Pub/Sub · RAG(Chatbot)</p>
+          <ul>
+            <li>멀티 서버 환경 예약 Race Condition 해결: Redisson 분산 락(Post ID 기준)으로 이중 예약 방지.</li>
+            <li>수평 확장 가능한 실시간 시스템 구축: SSE/WS + Redis Pub/Sub로 Sticky Session 없이 브로드캐스트.</li>
+            <li>관리자 공지 전송 6.4s → 0.5s(92% 개선): Bulk Insert + 병렬 Redis 발행으로 최적화.</li>
+            <li>임베딩 생성 23.8s → 15s(36% 개선): embedAll() 배치 처리로 호출 1,616회 → 17회로 축소.</li>
+          </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- DentalLink -->
+        <div class="proj">
+          <h3>DentalLink — 치과 예약 & AI 상담 플랫폼 (Team Lead)</h3>
+          <p class="meta">Java/Spring · MySQL · Redis Queue · WebSocket(STOMP) · Gemini(Function Calling) · Toss Payments</p>
+          <ul>
+            <li>예약 시스템 RESTful API 7개 엔드포인트 설계·구현 및 결제(Toss Payments) 연동.</li>
+            <li>AI 응답 지연(4s+) 개선: 최근 3개 메시지만 전송하도록 히스토리 최적화해 4초 → 2초(50% 단축).</li>
+            <li>N+1 쿼리 이슈 개선: 트랜잭션 내 선로딩으로 요청당 쿼리 10회 → 2회(80% 감소).</li>
+            <li>Function Call 히스토리 간소화로 토큰 사용량 70% 절감(시스템 프롬프트 + FC + FR만 유지).</li>
+            <li>Rate Limit 초과 시 상담원 자동 전환으로 서비스 연속성 확보 및 이탈 방지.</li>
+          </ul>
+        </div>
+      </main>
+
+    </div>
+  </div>
+</body>
+</html>

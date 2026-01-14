@@ -1,0 +1,155 @@
+# The Site Configuration
+
+# Import the theme
+theme: jekyll-theme-chirpy
+
+# The language of the webpage
+lang: ko-KR
+
+# Change to your timezone
+timezone: Asia/Seoul
+
+# jekyll-seo-tag settings
+# ↓ --------------------------
+
+title: 윤석호의 학습 블로그
+
+tagline: 정보처리기사 학습 정리 / 백엔드 트러블슈팅 기록
+
+description: >-
+  소프트웨어 엔지니어의 학습 기록과 기술 블로그
+
+# Fill in the protocol & hostname for your site.
+url: "https://moominIsCute.github.io"
+
+github:
+  username: moominIsCute
+
+social:
+  name: 윤석호
+  email: # your-email@example.com (optional)
+  links:
+    - https://github.com/moominIsCute
+
+# Site Verification Settings
+webmaster_verifications:
+  google: # fill in your Google verification code
+  bing: # fill in your Bing verification code
+
+# ↑ --------------------------
+# The end of `jekyll-seo-tag` settings
+
+# Web Analytics Settings
+analytics:
+  google:
+    id: # fill in your Google Analytics ID
+
+# Page views settings
+pageviews:
+  provider: # now only supports 'goatcounter'
+
+# Prefer color scheme setting.
+# Available options:
+#     light — Use the light color scheme
+#     dark — Use the dark color scheme
+theme_mode: light
+
+# the avatar on sidebar, support local or CORS resources
+avatar: # /assets/img/avatar.jpg (optional)
+
+# boolean type, the global switch for TOC in posts.
+toc: true
+
+comments:
+  provider: # [disqus | utterances | giscus]
+
+# Self-hosted static assets
+assets:
+  self_host:
+    enabled: # boolean, keep empty means false
+    env: # [development | production]
+
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+    deny_paths:
+      # - "/example"
+
+paginate: 10
+
+# The base URL of your site
+baseurl: ""
+
+# ------------ The following options are not recommended to be modified ------------------
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - "*.config.js"
+  - "package*.json"
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
