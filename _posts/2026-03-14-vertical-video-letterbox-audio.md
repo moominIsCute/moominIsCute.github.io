@@ -1,7 +1,7 @@
 ---
-title: "[인턴 일다] 5일차 - 가로 영상을 세로로 — 9:16 letterbox와 오디오 처리"
+title: "[인턴 활동] 가로 영상을 세로로 — 9:16 letterbox와 오디오 처리"
 date: 2026-03-14 00:00:00 +0900
-categories: [인턴 일다]
+categories: [인턴 활동]
 tags: [ffmpeg, 쇼츠, 세로영상, letterbox, ffprobe]
 ---
 

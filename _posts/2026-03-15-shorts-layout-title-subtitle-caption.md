@@ -1,7 +1,7 @@
 ---
-title: "[인턴 일다] 6일차 - YouTube Shorts 레이아웃 — 제목 바, 대사 자막, 캡션 바"
+title: "[인턴 활동] YouTube Shorts 레이아웃 — 제목 바, 대사 자막, 캡션 바"
 date: 2026-03-15 00:00:00 +0900
-categories: [인턴 일다]
+categories: [인턴 활동]
 tags: [쇼츠, 레이아웃, Pillow, ffmpeg, UI]
 ---
 

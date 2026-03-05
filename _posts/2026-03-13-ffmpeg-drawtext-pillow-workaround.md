@@ -1,7 +1,7 @@
 ---
-title: "[인턴 일다] 4일차 - ffmpeg drawtext가 안 된다 — Pillow로 우회한 이야기"
+title: "[인턴 활동] ffmpeg drawtext가 안 된다 — Pillow로 우회한 이야기"
 date: 2026-03-13 00:00:00 +0900
-categories: [인턴 일다]
+categories: [인턴 활동]
 tags: [ffmpeg, Pillow, 한국어, 자막, 영상편집]
 ---
 
